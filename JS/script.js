@@ -2,7 +2,7 @@ const API_URL = 'https://restcountries.com/v3.1/region/europe?fields=name'; //cr
 
 //Lire notre JSON 
 async function render() {
-    const response = await fetch('https://restcountries.com/v3.1/region/europe?fields=name'); // Création de la variable response 
+    const response = await fetch('https://restcountries.com/v3.1/region/europe?fields=name,'); // Création de la variable response 
     const countries = await response.json();
 
     let countryName=``; // Création de la variable countryName
